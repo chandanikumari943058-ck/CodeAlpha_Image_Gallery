@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Chandani's Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo-area">
+
+        <div class="camera-logo">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+
+        <h1>Chandani's</h1>
+
+        <span>GALLERY</span>
+
+        <p>Capture • Explore • Share</p>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <button class="nav-item active" data-action="home">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </button>
+
+        <button class="nav-item" data-action="explore">
+            <i class="fa-solid fa-compass"></i>
+            <span>Explore</span>
+        </button>
+
+        <button class="nav-item" data-action="favorites">
+            <i class="fa-regular fa-heart"></i>
+            <span>Favorites</span>
+        </button>
+
+        <button class="nav-item" data-action="random">
+            <i class="fa-solid fa-shuffle"></i>
+            <span>Random</span>
+        </button>
+
+        <button class="nav-item" data-action="slideshow">
+            <i class="fa-regular fa-circle-play"></i>
+            <span>Slideshow</span>
+        </button>
+
+        <button class="nav-item" data-action="about">
+            <i class="fa-regular fa-user"></i>
+            <span>About</span>
+        </button>
+
+        <button class="nav-item" data-action="contact">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact</span>
+        </button>
+
+    </nav>
+
+
+    <div class="side-quote">
+
+        <p>
+            Good<br>
+            Photos<br>
+            Good<br>
+            Vibes
+        </p>
+
+        <span>♥</span>
+
+    </div>
+
+
+    <div class="social-links">
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="main-content">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-shape shape-one"></div>
+    <div class="hero-shape shape-two"></div>
+
+    <div class="hero-content">
+
+        <small>WELCOME TO</small>
+
+        <h2>
+            My
+            <span>Image Gallery</span>
+        </h2>
+
+        <p>
+            A collection of
+            <strong>50 beautiful moments</strong>
+        </p>
+
+        <div class="hero-line"></div>
+
+    </div>
+
+
+    <div class="hero-search">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search photos..."
+            autocomplete="off">
+
+    </div>
+
+
+    <div class="hero-buttons">
+
+        <button id="favoriteTop">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button id="themeButton">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button id="darkButton">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </div>
+
+
+    <div class="hero-message">
+
+        <span>Explore</span>
+        <span>Beautiful</span>
+        <span>Moments</span>
+
+        <b>♥</b>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORY BAR
+===================================================== -->
+
+<section class="categories">
+
+    <button class="category active" data-category="all">
+        <i class="fa-solid fa-grip"></i>
+        All
+    </button>
+
+    <button class="category" data-category="nature">
+        <i class="fa-solid fa-leaf"></i>
+        Nature
+    </button>
+
+    <button class="category" data-category="flowers">
+        <i class="fa-solid fa-flower"></i>
+        Flowers
+    </button>
+
+    <button class="category" data-category="animals">
+        <i class="fa-solid fa-paw"></i>
+        Animals
+    </button>
+
+    <button class="category" data-category="food">
+        <i class="fa-solid fa-utensils"></i>
+        Food
+    </button>
+
+    <button class="category" data-category="cars">
+        <i class="fa-solid fa-car"></i>
+        Cars
+    </button>
+
+    <button class="category" data-category="travel">
+        <i class="fa-solid fa-plane"></i>
+        Travel
+    </button>
+
+    <button class="category" data-category="sunset">
+        <i class="fa-solid fa-sun"></i>
+        Sunset
+    </button>
+
+    <button class="category" data-category="ocean">
+        <i class="fa-solid fa-water"></i>
+        Ocean
+    </button>
+
+    <button class="category" data-category="space">
+        <i class="fa-solid fa-rocket"></i>
+        Space
+    </button>
+
+    <button class="category" data-category="architecture">
+        <i class="fa-solid fa-building"></i>
+        Architecture
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY AREA
+===================================================== -->
+
+<section class="gallery-section">
+
+    <div class="gallery-heading">
+
+        <div>
+
+            <h2>
+                All Photos
+                <span id="photoNumber">50</span>
+            </h2>
+
+            <p>
+                Beautiful moments collected in one place
+            </p>
+
+        </div>
+
+
+        <div class="gallery-controls">
+
+            <button id="gridBtn" class="control active">
+                <i class="fa-solid fa-grip"></i>
+                Grid
+            </button>
+
+            <button id="listBtn" class="control">
+                <i class="fa-solid fa-list"></i>
+                List
+            </button>
+
+            <select id="sortSelect">
+
+                <option value="latest">
+                    Latest
+                </option>
+
+                <option value="az">
+                    A - Z
+                </option>
+
+                <option value="za">
+                    Z - A
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="gallery-layout">
+
+        <!-- PHOTO GRID -->
+
+        <div id="gallery" class="gallery-grid">
+        </div>
+
+
+        <!-- FEATURED PANEL -->
+
+        <aside class="featured-panel">
+
+            <div class="panel-title">
+
+                <h3>
+                    <i class="fa-solid fa-sparkles"></i>
+                    Featured
+                </h3>
+
+                <button id="viewAllBtn">
+                    View All →
+                </button>
+
+            </div>
+
+
+            <div class="featured-image">
+
+                <img
+                    id="featuredImage"
+                    src="photo/nature1.jpg"
+                    alt="Featured">
+
+            </div>
+
+
+            <div class="featured-info">
+
+                <span id="featuredCategory">
+                    Nature
+                </span>
+
+                <h3 id="featuredTitle">
+                    Mountain Landscape
+                </h3>
+
+                <p id="featuredDescription">
+                    A peaceful view surrounded by mountains
+                    and beautiful nature.
+                </p>
+
+            </div>
+
+
+            <div class="featured-dots">
+
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- PAGINATION -->
+
+    <div class="pagination">
+
+        <button id="prevPage">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="page active">1</button>
+        <button class="page">2</button>
+
+        <span>...</span>
+
+        <button class="page">10</button>
+
+        <button id="nextPage">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT & CONTACT
+===================================================== -->
+
+<section class="info-section">
+
+    <div class="info-grid">
+
+        <article class="info-card about-section">
+
+            <div class="section-badge">
+                <i class="fa-regular fa-user"></i>
+                About Me
+            </div>
+
+            <h3>Hi, I’m Chandani — a creator who finds beauty in everyday moments.</h3>
+
+            <p>
+                I’m a passionate photographer and visual storyteller based in
+                India, with a deep love for nature, travel, portraits, and the
+                quiet details that make life memorable. Through my lens, I try
+                to capture warmth, emotion, and the magic of real experiences.
+            </p>
+
+            <p>
+                This gallery is a reflection of my journey — from golden sunsets
+                and peaceful mountains to colorful flowers, cozy food moments, and
+                the charm of city life. Every photo here tells a story, and every
+                story carries a feeling.
+            </p>
+
+            <div class="about-highlights">
+                <span>Photographer</span>
+                <span>Traveler</span>
+                <span>Storyteller</span>
+                <span>Creative</span>
+                <span>Nature Lover</span>
+                <span>Visual Artist</span>
+            </div>
+
+        </article>
+
+        <article class="info-card contact-section">
+
+            <div class="section-badge">
+                <i class="fa-regular fa-envelope"></i>
+                Contact
+            </div>
+
+            <h3>Let’s create something beautiful together.</h3>
+
+            <div class="contact-list">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Haryana, India
+                </p>
+                <p>
+                    <i class="fa-solid fa-user"></i>
+                    Chandani Kumari
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919204547753">+91 92045 47753</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:chandanikumari943058@gmail.com">chandanikumari943058@gmail.com</a>
+                </p>
+            </div>
+
+            <form class="contact-form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Your email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="3" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-images"></i>
+
+        <div>
+            <strong id="totalPhotos">50</strong>
+            <span>Total Photos</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <div>
+            <strong>10</strong>
+            <span>Categories</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <div>
+            <strong id="favoriteCount">0</strong>
+            <span>Favorites</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-face-smile"></i>
+
+        <div>
+            <strong>100%</strong>
+            <span>Good Vibes</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Chandani's Gallery
+        |
+        Made with
+        <span>♥</span>
+        using HTML, CSS & JavaScript
+    </p>
+
+    <div>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+</main>
+
+
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div id="lightbox" class="lightbox">
+
+    <div class="lightbox-backdrop" aria-hidden="true"></div>
+
+    <button id="closeLightbox" class="close-lightbox">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+
+    <button id="lightPrev" class="light-nav left">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <div class="lightbox-image-frame">
+            <img id="lightImage" src="" alt="">
+        </div>
+
+        <div class="light-info">
+
+            <span id="lightCategory">
+                Nature
+            </span>
+
+            <h2 id="lightTitle">
+                Mountain Landscape
+            </h2>
+
+            <p id="lightDescription">
+                Beautiful photograph.
+            </p>
+
+            <div class="light-actions">
+
+                <button id="zoomIn">
+                    <i class="fa-solid fa-plus"></i>
+                    Zoom In
+                </button>
+
+                <button id="zoomOut">
+                    <i class="fa-solid fa-minus"></i>
+                    Zoom Out
+                </button>
+
+                <button id="fullscreenBtn">
+                    <i class="fa-solid fa-expand"></i>
+                    Fullscreen
+                </button>
+
+                <button id="downloadBtn">
+                    <i class="fa-solid fa-download"></i>
+                    Download
+                </button>
+
+                <button id="shareBtn">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share
+                </button>
+
+                <button id="likeLight">
+                    <i class="fa-regular fa-heart"></i>
+                    Like
+                </button>
+
+            </div>
+
+            <div class="counter">
+                <span id="lightCounter">1 / 50</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button id="lightNext" class="light-nav right">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div id="toast">
+    <i class="fa-solid fa-check"></i>
+    <span>Done!</span>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
